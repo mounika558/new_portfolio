@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hello{
+    letter-spacing: 0.2rem;
+}
+body {
+  @apply overflow-x-hidden;
+}
