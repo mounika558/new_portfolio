@@ -32,7 +32,7 @@ const Project = () => {
   ]
   return (
     <>
-    <div className="flex flex-col text-center my-20 gap-10">
+    <div className="flex flex-col text-center my-20 gap-10 data-aos=fade-up">
     <span className=" text-3xl md:text-4xl font-bold">Featured Projects</span>
     <span className="text-gray-600 font-semibold text-lg">Here are some of my recent projects that showcase my skills in frontend development and UI/UX design.</span>
     </div>

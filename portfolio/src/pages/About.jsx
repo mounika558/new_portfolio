@@ -62,14 +62,14 @@ const skillsTools = [
 
   return (
     <>
-    <div className="my-24">
+    <div className="my-24 data-aos=fade-up">
       <p className=" text-xl md:text-3xl font-bold m-10 text-center">Know Something About Me!!!</p>
       <div className="flex border-solid border-gray-600  mx-8 md:w-4/6 border-2 rounded-lg md:mx-auto shadow-inner shadow-slate-100 transform transition ease-in-out duration-300 hover:scale-90">
       <p className=" text-justify md:text-center text-base leading-7 tracking-wide flex flex-wrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-600 m-8">I'm Mounika, a frontend developer from SREC, currently pursuing my degree in the IT department. I have a strong passion for UI/UX design and love building engaging, user-friendly web applications. I’ve been actively exploring web technologies through hands-on projects and recently enhanced my skills in JavaScript and UI/UX design through the Spotknack Frontend Development course. I enjoy turning ideas into clean, responsive interfaces using tools like React, Tailwind CSS, and Java. I'm constantly learning and evolving, driven by a love for design, code, and creativity—and always excited to build digital experiences that connect with people.</p>
       </div>
     </div>
     
-      <div className=" grid grid-col-1 md:grid md:grid-cols-2 gap-y-6">
+      <div className=" grid grid-col-1 md:grid md:grid-cols-2 gap-y-6 data-aos=fade-up">
           {
             cardData.map((item,id)=>{
               return(

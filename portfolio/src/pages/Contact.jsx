@@ -11,7 +11,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 max-w-8xl mx-auto">
         {/* Left - Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
