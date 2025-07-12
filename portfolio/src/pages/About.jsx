@@ -19,22 +19,22 @@ const cardData = [
   {
     id:1,
     title: "Frontend Developer",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repudiandae nostrum ea expedita nemo laborum illo est officiis, nihil beatae ullam modi error iure minima, unde praesentium eaque alias minus!"
+    description:"I'm passionate about frontend development and enjoy building clean, user-friendly, and visually engaging web interfaces. I've worked on projects like a Hotstar clone, QR code generator, and a real-time website for Spotknack using React and Tailwind CSS. I'm skilled in HTML, CSS, Tailwind, Bootstrap, and React, and I love bringing ideas to life through code and design."
   },
   {
     id:2,
     title: "UIUX Designer",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere debitis quos consequuntur, incidunt velit voluptas dicta, quis eius earum at numquam animi, officiis laboriosam architecto tenetur nam veniam doloribus consequatur?"
+    description: "I'm deeply interested in UI/UX design and enjoy creating clean, intuitive interfaces that enhance user experience. I've explored tools like Figma to design wireframes, prototypes, and responsive layouts for web projects. My design approach focuses on simplicity, usability, and aligning visuals with real user needs."
   },
   {
     id:3,
     title: "Problem Solving",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sunt, recusandae vel aut debitis sit, tempore adipisci nisi reprehenderit expedita aspernatur explicabo voluptates ullam. Nihil modi natus sunt adipisci porro."
+    description:"I'm learning problem-solving in Java and have practiced over 50 problems on LeetCode and 40 on GeeksforGeeks. I’m familiar with basic data structures like stacks, queues, and linked lists, as well as core Java concepts up to collections. These problems have helped me improve my coding logic and understanding step by step."
   },
   {
     id:4,
     title: "Ai Enthusiast",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsam perspiciatis velit inventore quisquam nobis commodi, tempora, quo autem fugiat eum sed corrupti quidem temporibus qui praesentium nemo maxime sunt!"
+    description: "I'm an AI enthusiast exploring how artificial intelligence can enhance frontend experiences. I enjoy experimenting with inbuilt AI features in web applications, like smart chatbots and real-time predictions. I'm excited about combining design, interactivity, and AI to build more intelligent and user-friendly websites."
   }
 ];
 
@@ -64,44 +64,48 @@ const skillsTools = [
     <>
     <div className="my-24 mt-28">
       <p className="text-5xl font-bold m-10 text-center">Know Something About Me!!!</p>
-      <p className="text-center text-base font-semibold text-gray-600 m-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ratione eos sequi minima autem architecto.<br></br> 
-        Iste corporis quo necessitatibus laborum, ipsa aspernatur corrupti soluta pariatur eum rem, in, officiis alias?</p>
+      <div className="flex border-solid border-gray-600 w-4/6 border-2 rounded-lg mx-auto shadow-inner shadow-slate-100 transform transition ease-in-out duration-300 hover:scale-90">
+      <p className="text-center text-xs leading-7 tracking-wide flex flex-wrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-600 m-8">I'm Mounika, a frontend developer from SREC, currently pursuing my degree in the IT department. I have a strong passion for UI/UX design and love building engaging, user-friendly web applications. I’ve been actively exploring web technologies through hands-on projects and recently enhanced my skills in JavaScript and UI/UX design through the Spotknack Frontend Development course. I enjoy turning ideas into clean, responsive interfaces using tools like React, Tailwind CSS, and Java. I'm constantly learning and evolving, driven by a love for design, code, and creativity—and always excited to build digital experiences that connect with people.</p>
+      </div>
     </div>
-      <div className="flex gap-10 mx-10">
+    
+      <div className="grid grid-cols-2 gap-y-6">
           {
             cardData.map((item,id)=>{
               return(
-                <div className="bg-gray-500 text-black rounded-md text-center leading-3" key={id}>
-                <p className="text-xl font-bold p-4">{item.title}</p>
-                <p className='text-lg text-black p-8'>{item.description}</p>
+                <div className="rounded-md text-center p-6 w-4/6 mx-auto border-2 border-solid border-gray-600 shadow-inner shadow-yellow-200 transform transition ease-in-out duration-300 hover:scale-110" key={id}>
+                <p className="text-xl font-bold pb-4">{item.title}</p>
+                <p className='text-xs text-justify tracking-wide leading-5 text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-yellow-500'>{item.description}</p>
                 </div>
               )
             })
           }
         </div>
-        <div>
-          <span className="text-3xl font-bold flex justify-center mt-14">Skills</span>
-          <div className="flex gap-10 m-14">
+          <div className='m-12 text-center text-gray-400'><blockquote className='text-xs italic'>"You don't need more time. You need more focus"</blockquote>
+          <blockquote className='text-xs italic'>"Focus on progress, not perfection"</blockquote></div>
+        <div className='bg-white text-black mt-20 p-8'>
+          <span className="text-3xl font-bold flex justify-center">Skills</span>
+          <div className="flex gap-10 p-6 m-4">
           {
             skillsPrimary.map((img,id)=>{
               return(
-                  <img src={img.logo} alt={img.name} key={id} className="w-16 h-16 "/>
+                  <img src={img.logo} alt={img.name} key={id} className="w-16 h-16 transform transition ease-in-out duration-300 hover:scale-110"/>
+                
+              )
+            })
+          }</div>
+        <div>
+          <span className="text-3xl font-bold flex justify-center flex-wrap">Tools</span>
+          <div className="flex gap-10 p-6 m-4">
+          {
+            skillsTools.map((img,id)=>{
+              return(
+                  <img src={img.logo} alt={img.name} key={id} className="w-16 h-16 transform transition ease-in-out duration-300 hover:scale-110"/>
                 
               )
             })
           }</div>
         </div>
-        <div>
-          <span className="text-3xl font-bold flex justify-center mt-14">Tools</span>
-          <div className="flex gap-10 m-14">
-          {
-            skillsTools.map((img,id)=>{
-              return(
-                  <img src={img.logo} alt={img.name} key={id} className="w-16 h-16 "/>
-                
-              )
-            })
-          }</div>
         </div>
     </>
   )

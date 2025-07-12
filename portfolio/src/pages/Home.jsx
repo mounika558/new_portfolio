@@ -2,16 +2,20 @@ import React, { useEffect, useState } from 'react'
 import Project from "./Project";
 import About from './About';
 import Contact from './Contact';
+import { Link } from 'react-router-dom';
+import { SlArrowDown } from "react-icons/sl";
 const Home = () => {
-  const [project,setproject]=useState();
   const [abt,setabt]=useState();
+  const [project,setproject]=useState();
   const [contact,setcontact]=useState();
   function displayprojects(){
-    setproject(<Project/>)
     setabt(<About/>)
+    setproject(<Project/>)
     setcontact(<Contact/>)
   } 
-
+  const getcontact=()=>{
+  setcontact(<Contact/>)
+  }
   return (
     <>
       <div className="flex flex-col text-center mt-32">
@@ -21,14 +25,19 @@ const Home = () => {
       </div>
       
       <div className="flex justify-center m-6 gap-6">
-      <button className="bg-black text-white px-6 py-2 rounded-md border-2 border-gray-600">View My Work</button>
-      <button className="border-4 border-black-600 px-6 py-2 rounded-md">Get In Touch</button>
+      <button className="bg-black text-white px-6 py-2 rounded-md border-2 border-gray-600">My Resume</button>
+      <button className="px-6  rounded-md text-white bg-gradient-to-r from-pink-500 via-red-500 to-orange-500" onClick={getcontact}>
+      <Link to='/Contact'>Get in Contact
+      </Link>
+      </button>
+      
       </div>
       <div className="flex justify-center translate-x-7 animate-pulse text-xl text-black mt-10 cursor-pointer">
-      <button id="projects-arrow" onClick={displayprojects}><i className="fas fa-arrow-down"></i></button>
+      <button id="projects-arrow" onClick={displayprojects}><SlArrowDown className='text-white mt-6 w-4 h-4' /></button>
       </div>
-      <div>{project}
+      <div>
       {abt}
+      {project}
       {contact}
       </div>
     </>

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="px-12 py-16 mt-12 bg-gray-50 min-h-screen">
+    <section className="px-12 py-16 mt-12 bg-gray-50 min-h-screen text-black">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold">Get In Touch</h2>
         <p className="text-gray-600 mt-4 text-xs leading-6">
@@ -16,17 +16,19 @@ const Contact = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
           <p className="text-gray-600 mb-6 text-xs leading-6">
-            I'm currently available for freelance work and full-time positions. If you have a project that needs some creative touch, I'd love to hear about it!
+            I'm currently available for intership and full-time positions. If you have a project that needs some creative touch, I'd love to hear about it!
           </p>
 
           <div className="mb-4 text-xs">
             <h4 className="font-semibold">Email</h4>
-            <p className="text-gray-700">mounika2004@gmail.com</p>
+            <p className="text-gray-700">mounikakishor2004@gmail.com</p>
           </div>
 
-          <div className="mb-4 text-xs">
+          <div className="mb-4 text-xs space-y-3">
             <h4 className="font-semibold">Location</h4>
             <p className="text-gray-700">Coimbatore</p>
+            <p className="text-gray-700">Preferred location to work :Coimbatore | Chennai | Bangalore</p>
+
           </div>
 
           <div className="mb-4  text-xs">
