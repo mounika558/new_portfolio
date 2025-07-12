@@ -2,7 +2,7 @@ import React from 'react'
 import autism from '../assets/images/autsim.jpg';
 import hotstar from '../assets/images/hotstar.jpg';
 import qrcode from '../assets/images/qrcode.jpg';
-import uipath from '../assets/images/uipath.jpg';
+import uipath from '../assets/images/UIpath.jpg';
 const Project = () => {
   const projectitems=[
     {
