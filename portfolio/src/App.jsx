@@ -13,7 +13,7 @@ const App = () => {
     <>
 <Router>
 <header className="fixed top-0 right-0 left-0 bg-black z-50">
-    <ul className="flex list-none font-bold justify-center gap-20 p-3 text-md">
+    <ul className="flex list-none font-bold justify-center mx-auto gap-6 p-5 text-md md:text-xl  md:gap-20">
     <li><NavLink to="/" className={({isActive})=>
     isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>Home</NavLink></li>
 
@@ -24,7 +24,7 @@ const App = () => {
     isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>Project</NavLink></li>
     
     <li><NavLink to="/Contact" className={({isActive})=>
-    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}><button className="px-2 rounded-md text-white bg-gradient-to-r from-pink-500 via-red-500 to-orange-500">Contact Me</button></NavLink></li>
+    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>Contact</NavLink></li>
     </ul>
     
 </header>

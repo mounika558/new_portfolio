@@ -6,7 +6,7 @@ const Contact = () => {
     <section className="px-12 py-16 mt-12 bg-gray-50 min-h-screen text-black">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold">Get In Touch</h2>
-        <p className="text-gray-600 mt-4 text-xs leading-6">
+        <p className="text-gray-600 mt-4 text-base leading-6">
           Have a question or want to work together? Feel free to reach out to me using the form below or through social media.
         </p>
       </div>
@@ -15,23 +15,23 @@ const Contact = () => {
         {/* Left - Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-          <p className="text-gray-600 mb-6 text-xs leading-6">
+          <p className="text-gray-600 mb-6 text-base leading-6">
             I'm currently available for intership and full-time positions. If you have a project that needs some creative touch, I'd love to hear about it!
           </p>
 
-          <div className="mb-4 text-xs">
+          <div className="mb-4 text-base">
             <h4 className="font-semibold">Email</h4>
             <p className="text-gray-700">mounikakishor2004@gmail.com</p>
           </div>
-
-          <div className="mb-4 text-xs space-y-3">
+          
+          <div className="mb-4 text-base space-y-3">
             <h4 className="font-semibold">Location</h4>
             <p className="text-gray-700">Coimbatore</p>
             <p className="text-gray-700">Preferred location to work :Coimbatore | Chennai | Bangalore</p>
 
           </div>
 
-          <div className="mb-4  text-xs">
+          <div className="mb-4  text-base">
             <h4 className="font-semibold">Social Media</h4>
             <div className="flex space-x-4 mt-2">
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         {/* Right - Contact Form */}
-        <form className="space-y-6  text-xs">
+        <form className="space-y-6  text-base">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block font-medium">Name</label>

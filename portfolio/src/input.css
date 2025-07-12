@@ -6,8 +6,9 @@
     letter-spacing: 0.2rem;
 }
 body {
-  @apply overflow-x-hidden;
   background-color: black;
   color: white;
+  overflow-x: hidden;
+  max-width:fit-content;
 }
 
