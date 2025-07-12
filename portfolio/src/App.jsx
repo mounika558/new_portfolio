@@ -10,12 +10,12 @@ const App = () => {
   return (
     <>
   <Router>
-<header>
-    <ul className="flex list-none font-bold justify-center gap-20 p-8 text-2xl">
+<header className="fixed top-0 right-0 left-0 bg-black text-white">
+    <ul className="flex list-none font-bold justify-center gap-20 p-3 text-md">
      <li><Link to="/">Home</Link></li>
      <li><Link to="/Project">Project</Link></li>
      <li><Link to="/About">About</Link></li>
-     <li><Link to="/Contact"><button className="bg-black text-white rounded-md p-2 hover:bg-gray-700">Contact Me</button></Link></li>
+     <li><Link to="/Contact"><button className="bg-white text-black rounded-md p-1 hover:bg-gray-700">Contact Me</button></Link></li>
     </ul>
 </header>
   <Routes>
@@ -24,7 +24,6 @@ const App = () => {
   <Route path='/About' element={<About/>}/>
   <Route path='/Contact' element={<Contact/>}/>
   </Routes>
-
   </Router>
     </>
 )
