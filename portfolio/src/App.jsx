@@ -22,19 +22,19 @@ useEffect(() => {
   return (
     <>
 <Router>
-<header className="fixed top-0 right-0 left-0 bg-black z-50">
+<header className=" top-0 right-0 left-0  z-50">
     <ul className="flex list-none font-bold justify-center mx-auto gap-6 p-5 text-md md:text-xl lg:text-2xl lg:gap-x-28  md:gap-20">
     <li><NavLink to="/" className={({isActive})=>
-    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>Home</NavLink></li>
+    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-black to-rose-900':'text-white'}>Home</NavLink></li>
 
     <li><NavLink to="/About" className={({isActive})=>
-    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>About</NavLink></li>
+    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r  from-black to-rose-900':'text-white'}>About</NavLink></li>
     
     <li><NavLink to="/Project" className={({isActive})=>
-    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>Project</NavLink></li>
+    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r  from-black to-rose-900':'text-white'}>Project</NavLink></li>
     
     <li><NavLink to="/Contact" className={({isActive})=>
-    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500':'text-white'}>Contact</NavLink></li>
+    isActive ? 'text-transparent bg-clip-text bg-gradient-to-r  from-black to-rose-900':'text-white'}>Contact</NavLink></li>
     </ul>
     
 </header>

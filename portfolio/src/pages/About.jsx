@@ -1,11 +1,11 @@
 import React from 'react'
 import bootstrap from '../assets/icons/bootstrap.png';
-import Tailwind from '../assets/icons/css-3.png';
+import Tailwind from '../assets/icons/tailwindcss.png';
 import css from '../assets/icons/css-3.png';
 import java from '../assets/icons/java.png';
 import cProgram from '../assets/icons/letter-c.png';
 import SQL from '../assets/icons/sql-server.png';
-import MongoDB from '../assets/icons/mongodb.png';
+// import MongoDB from '../assets/icons/mongodb.png';
 import react from '../assets/icons/react.png';
 import JavaScript from '../assets/icons/js.png';
 import figma from '../assets/icons/figma.png';
@@ -14,6 +14,8 @@ import canva from '../assets/icons/canva.png';
 import git from '../assets/icons/git.png';
 import github from '../assets/icons/github.png';
 import jira from '../assets/icons/jira.png';
+import Vercel from '../assets/icons/vercel.png';
+import Netlify from '../assets/icons/netlify.png';
 const About = () => {
 const cardData = [
   {
@@ -39,33 +41,36 @@ const cardData = [
 ];
 
 const skillsPrimary = [
-  { name: "Java", logo: java },
-  { name: "C", logo: cProgram },
-  { name: "SQL", logo: SQL },
-  { name: "MongoDB", logo: MongoDB },
-  { name: "JavaScript", logo: JavaScript },
-  { name: "ReactJS", logo: react },
-  { name: "HTML/CSS", logo: css },
-  { name: "Bootstrap", logo: bootstrap },
-  { name: "TailwindCSS", logo: Tailwind }
+  { name: "Java", logo: java ,text:"java"},
+  { name: "C", logo: cProgram ,text:"C"},
+  { name: "SQL", logo: SQL ,text:"MYSQL"},
+  { name: "JavaScript", logo: JavaScript,text:"JavaScript" },
+  { name: "ReactJS", logo: react,text:"React Js" },
+  { name: "HTML/CSS", logo: css,text:"HTML/CSS" },
+  { name: "Bootstrap", logo: bootstrap,text:"Bootstrap" },
+  { name: "TailwindCSS", logo: Tailwind,text:"Tailwind css" }
 ];
 
 const skillsTools = [
-  { name: "Git", logo: git },
-  { name: "GitHub", logo: github },
-  { name: "VS Code", logo: Vscode },
-  { name: "Figma", logo: figma },
-  { name: "Canva", logo: canva },
-  { name: "Jira", logo: jira }
+  { name: "Git", logo: git,text:"Git" },
+  { name: "GitHub", logo: github ,text:"Github"},
+  { name: "VS Code", logo: Vscode,text:"Vs Code" },
+  { name: "Figma", logo: figma,text:"Figma" },
+  { name: "Canva", logo: canva,text:"Canva" },
+  { name: "Jira", logo: jira,text:"Jira" },
+  {name:"vercel",logo:Vercel,text:"Vercel"},
+  {name:"Netlify",logo:Netlify,text:"Netlify"}
+
 ];
 
 
   return (
     <>
     <div className="my-24 data-aos=fade-up">
-      <p className=" text-xl md:text-3xl font-bold m-10 text-center">Know Something About Me!!!</p>
-      <div className="flex border-solid border-gray-600  mx-8 md:w-4/6 border-2 rounded-lg md:mx-auto shadow-inner shadow-slate-100 transform transition ease-in-out duration-300 hover:scale-90">
-      <p className=" text-justify md:text-center text-base leading-7 tracking-wide flex flex-wrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-600 m-8">I'm Mounika, a frontend developer from SREC, currently pursuing my degree in the IT department. I have a strong passion for UI/UX design and love building engaging, user-friendly web applications. I’ve been actively exploring web technologies through hands-on projects and recently enhanced my skills in JavaScript and UI/UX design through the Spotknack Frontend Development course. I enjoy turning ideas into clean, responsive interfaces using tools like React, Tailwind CSS, and Java. I'm constantly learning and evolving, driven by a love for design, code, and creativity—and always excited to build digital experiences that connect with people.</p>
+      <p className=" text-xl md:text-5xl font-bold m-10 text-center">Know Something About Me!!!</p>
+      <div className="flex  mx-8 md:w-4/6 rounded-lg md:mx-auto  transform transition ease-in-out duration-300 hover:scale-90">
+      <p className=" text-center md:text-center text-lg leading-9  tracking-wide flex flex-wrap font-semibold text-transparent bg-clip-text text-white m-8">I'm Mounika, a frontend developer from SREC, currently pursuing my degree in the IT department. 
+        I have a strong passion for UI/UX design and love building engaging, user-friendly web applications. I’ve been actively exploring web technologies through hands-on projects and recently enhanced my skills in JavaScript and UI/UX design through the Spotknack Frontend Development course. I enjoy turning ideas into clean, responsive interfaces using tools like React, Tailwind CSS, and Java. I'm constantly learning and evolving, driven by a love for design, code, and creativity—and always excited to build digital experiences that connect with people.</p>
       </div>
     </div>
     
@@ -73,37 +78,41 @@ const skillsTools = [
           {
             cardData.map((item,id)=>{
               return(
-                <div className="rounded-md text-center  mx-8 p-3 md:p-6 md:w-5/6 md:mx-auto border-2 border-solid border-gray-600 shadow-inner shadow-yellow-200 transform transition ease-in-out duration-300 hover:scale-110" key={id}>
+                <div className="rounded-md text-center  mx-8 p-3 md:p-6 md:w-5/6 md:mx-auto border-2 border-none outline-none shadow-inner shadow-white transform transition ease-in-out duration-300 hover:scale-110" key={id}>
                 <p className="text-xl font-bold pb-4">{item.title}</p>
-                <p className='text-xs md:text-base text-justify tracking-wide leading-5 text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-yellow-500'>{item.description}</p>
+                <p className='text-xs md:text-base text-justify tracking-wide leading-5 text-transparent bg-clip-text text-white'>{item.description}</p>
                 </div>
               )
             })
           }
         </div>
 
-          <div className='m-12 text-center text-gray-400'><blockquote className='text-xs md:text-lg italic'>"You don't need more time. You need more focus"</blockquote>
+          <div className='m-12 text-center text-rose-900 font-bold'><blockquote className='text-xs md:text-lg italic'>"You don't need more time. You need more focus"</blockquote>
           <blockquote className='text-xs italic md:text-lg'>"Focus on progress, not perfection"</blockquote></div>
           
-        <div className='bg-white text-black mt-20 p-8'>
+        <div className=' text-black mt-20 p-8'>
           <span className="text-3xl font-bold flex justify-center">Skills</span>
-          <div className="flex gap-10 p-6 m-4 flex-wrap lg:flex-nowrap">
+          <div className="flex gap-8 p-6 m-4 flex-wrap lg:flex-nowrap">
           {
             skillsPrimary.map((img,id)=>{
               return(
+                  <div className='shadow-lg shadow-black bg-amber-100 p-6 w-36 items-center  flex flex-col rounded-md hover:scale-110 transition ease-out duration-500 space-y-4 text-center '>
                   <img src={img.logo} alt={img.name} key={id} className="w-16 h-16 transform transition ease-in-out duration-300 hover:scale-110"/>
-                
+                  <p className='text-sm font-semibold text-black'>{img.text}</p>
+                </div>
               )
             })
           }</div>
         <div>
           <span className="text-3xl font-bold flex justify-center flex-wrap">Tools</span>
-          <div className="flex gap-10 p-6 m-4 flex-wrap">
+          <div className="flex gap-8 p-6 m-4 flex-wrap">
           {
             skillsTools.map((img,id)=>{
               return(
+                  <div className='shadow-lg shadow-black bg-amber-100 p-6 w-36 items-center  flex flex-col rounded-md hover:scale-110 transition ease-out duration-500 space-y-4 text-center '>
                   <img src={img.logo} alt={img.name} key={id} className="w-16 h-16 transform transition ease-in-out duration-300 hover:scale-110"/>
-                
+                  <p className='text-sm font-semibold text-black'>{img.text}</p>
+                  </div>
               )
             })
           }</div>
